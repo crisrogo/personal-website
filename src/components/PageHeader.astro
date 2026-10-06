@@ -1,0 +1,27 @@
+---
+interface Props {
+	title: string;
+	lead?: string;
+}
+
+const { title, lead } = Astro.props;
+---
+
+<header class="page-header">
+	<h1 class="t-h1">{title}</h1>
+	{lead && <p class="t-lead measure lead">{lead}</p>}
+	<slot />
+</header>
+
+<style>
+	.page-header {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 4);
+		margin-block-end: calc(var(--spacing) * 12);
+	}
+
+	.lead {
+		color: var(--ink-muted);
+	}
+</style>

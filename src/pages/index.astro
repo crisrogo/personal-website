@@ -1,0 +1,166 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import WorkList from '../components/WorkList.astro';
+import Figure from '../components/Figure.astro';
+import portrait from '../assets/portrait/cristobal-rodero.png';
+import cohortRow from '../assets/figures/rodero2021-ct-cohort-row.jpg';
+import { PERSON, PROFILES, link } from '../lib/site';
+import { byCategory, firstAuthoredArticles } from '../lib/publications';
+
+const research = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
+const engagement = (await getCollection('engagement'))
+	.filter((e) => !e.data.draft)
+	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+	.slice(0, 3);
+const selected = firstAuthoredArticles().slice(0, 5);
+const datasetCount = byCategory('dataset').length;
+---
+
+<SiteLayout>
+	<section class="shell section-y intro">
+		<div class="intro-text">
+			<h1 class="t-display">{PERSON.name}</h1>
+			<p class="t-meta role">
+				{PERSON.role}, {PERSON.department}, {PERSON.institution}
+			</p>
+			<p class="t-lead statement measure">
+				I build cohorts of virtual hearts from patient images, and I study how far their predictions can be trusted.
+			</p>
+			<div class="prose-body">
+				<p>
+					I trained as a mathematician at the Universitat de València and did my PhD in biomedical engineering at
+					King's College London, on how the shape of the heart relates to its simulated function. I work in the{' '}
+					<a href={PERSON.group.url}>{PERSON.group.name}</a>, where I build and calibrate four-chamber models of
+					the heart for cohorts of patients, and release the meshes and simulations for others to use.
+				</p>
+			</div>
+			<ul class="profiles">
+				{PROFILES.map((p) => (
+					<li><a href={p.href} class="link-inline t-small" rel="me noopener">{p.label}</a></li>
+				))}
+			</ul>
+		</div>
+		<Image src={portrait} alt={`Portrait of ${PERSON.name}`} width={360} height={360} class="portrait" />
+	</section>
+
+	<section class="shell">
+		<Figure
+			src={cohortRow}
+			alt="Five four-chamber heart meshes in a row, numbered 1 to 5, each a slightly different shape."
+			caption="Five of 20 four-chamber meshes built from the CT scans of people in whom no heart condition was found. Cropped from Rodero et al. (2021), PLoS Computational Biology, reused under CC BY 4.0."
+		/>
+	</section>
+
+	<section class="shell section-y">
+		<SectionHeader title="Research" action={{ href: link('/research/'), label: 'All research' }} />
+		<ol class="rows">
+			{research.map((r) => (
+				<li class="row">
+					<a href={link(`/research/${r.id}/`)} class="t-h3 link-quiet">{r.data.title}</a>
+					<p class="row-body">{r.data.summary}</p>
+				</li>
+			))}
+		</ol>
+	</section>
+
+	<section class="shell section-y">
+		<SectionHeader
+			title="Selected papers"
+			lead="Journal articles I led. The full list is on the publications page."
+			action={{ href: link('/publications/'), label: 'All publications' }}
+		/>
+		<WorkList works={selected} />
+	</section>
+
+	<section class="shell section-y">
+		<SectionHeader title="Open data and code" action={{ href: link('/data-and-code/'), label: 'Data and code' }} />
+		<p class="measure" style="color: var(--ink-muted)">
+			I release the meshes and simulations behind my papers. There are <span class="tabular">{datasetCount}</span>
+			datasets on Zenodo with my name on them, from a cohort of 1000 synthetic hearts to the simulations of the
+			hypertrophic cardiomyopathy study. The code for four of my papers is on GitHub.
+		</p>
+	</section>
+
+	<section class="shell section-y">
+		<SectionHeader title="Engagement" action={{ href: link('/engagement/'), label: 'All engagement' }} />
+		<ol class="rows">
+			{engagement.map((e) => (
+				<li class="row">
+					<p class="t-meta">{e.data.venue} &middot; <time>{e.data.dateLabel ?? e.data.date.getFullYear()}</time></p>
+					<a href={link('/engagement/') + `#${e.id}`} class="t-h3 link-quiet">{e.data.title}</a>
+				</li>
+			))}
+		</ol>
+	</section>
+</SiteLayout>
+
+<style>
+	.intro {
+		display: grid;
+		gap: calc(var(--spacing) * 10);
+		align-items: start;
+	}
+
+	@media (width >= 52rem) {
+		.intro {
+			grid-template-columns: minmax(0, 1fr) 15rem;
+		}
+	}
+
+	.intro-text {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 5);
+	}
+
+	.role {
+		color: var(--ink-muted);
+	}
+
+	.statement {
+		color: var(--ink);
+		font-weight: 500;
+	}
+
+	.portrait {
+		width: 100%;
+		max-width: 15rem;
+		aspect-ratio: 1;
+		object-fit: cover;
+		background-color: var(--surface-sunken);
+	}
+
+	.profiles {
+		display: flex;
+		flex-wrap: wrap;
+		gap: calc(var(--spacing) * 2) calc(var(--spacing) * 6);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	/* Rows separated by a rule and space. No cards. */
+	.rows {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 1.5);
+		padding-block: calc(var(--spacing) * 5);
+		border-top: var(--stroke) solid var(--border);
+	}
+
+	.row-body {
+		color: var(--ink-muted);
+		max-width: var(--measure);
+	}
+</style>

@@ -1,0 +1,108 @@
+---
+/*
+ * The page an organiser needs: a biography in two lengths, a photograph to
+ * download, and a way to get in touch. Third person, so it can be pasted
+ * straight into a programme or a press release.
+ */
+import { Image } from 'astro:assets';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import Placeholder from '../../components/Placeholder.astro';
+import portrait from '../../assets/portrait/cristobal-rodero.png';
+import { PERSON, PROFILES } from '../../lib/site';
+
+const shortBio = `${PERSON.name} is a ${PERSON.role} at the ${PERSON.department}, ${PERSON.institution}. He builds cohorts of virtual hearts from patient images and studies how far their predictions can be trusted, with work on heart shape and function, model calibration, in-silico trials and hypertrophic cardiomyopathy.`;
+
+const longBio = [
+	`${PERSON.name} is a ${PERSON.role} in the Cardiac Electro-Mechanics Research Group at the ${PERSON.department}, ${PERSON.institution}.`,
+	`He studied mathematics at the Universitat de València, where he also took a master's degree in mathematical research awarded jointly with the Universitat Politècnica de València, and took a second master's degree, in computational mathematics, at the Universitat Jaume I.`,
+	`He completed his PhD in biomedical engineering at King's College London, supervised by Steven Niederer and Pablo Lamata, on the relationship between the shape of the heart and its simulated function.`,
+	`His research builds cohorts of four-chamber heart models from clinical images, calibrates them with statistical emulators, and uses them in in-silico trials and in studies of hypertrophic cardiomyopathy.`,
+	`He releases the meshes and simulations behind his papers as open data, and writes about cardiac modelling for young readers.`,
+].join(' ');
+
+const countWords = (text: string) => text.split(/\s+/).filter(Boolean).length;
+---
+
+<SiteLayout title="About">
+	<div class="shell section-y">
+		<PageHeader title="About" lead="A biography in two lengths and a photograph, for programmes, posters and introductions." />
+
+		<div class="layout">
+			<div class="flex flex-col gap-[calc(var(--spacing)*12)]">
+				<section class="flex flex-col gap-[calc(var(--spacing)*3)]">
+					<h2 class="t-h3">Short biography <span class="count tabular">{countWords(shortBio)} words</span></h2>
+					<p class="bio measure">{shortBio}</p>
+				</section>
+
+				<section class="flex flex-col gap-[calc(var(--spacing)*3)]">
+					<h2 class="t-h3">Longer biography <span class="count tabular">{countWords(longBio)} words</span></h2>
+					<p class="bio measure">{longBio}</p>
+				</section>
+
+				<section class="flex flex-col gap-[calc(var(--spacing)*3)]">
+					<h2 class="t-h3">Contact</h2>
+					{PERSON.email ? (
+						<p><a href={`mailto:${PERSON.email}`} class="link-inline">{PERSON.email}</a></p>
+					) : (
+						<Placeholder need="The email address to publish: the Imperial one, a personal one, or a contact form." />
+					)}
+					<ul class="profiles">
+						{PROFILES.map((p) => (
+							<li><a href={p.href} class="link-inline t-small" rel="me noopener">{p.label}</a></li>
+						))}
+					</ul>
+				</section>
+			</div>
+
+			<aside class="flex flex-col gap-[calc(var(--spacing)*3)]">
+				<Image src={portrait} alt={`Portrait of ${PERSON.name}`} width={360} height={360} class="portrait" />
+				<a href={portrait.src} download="cristobal-rodero.png" class="link-inline t-small">
+					Download the photograph ({portrait.width} &times; {portrait.height} pixels)
+				</a>
+				<Placeholder need="A larger photograph, at least 1500 pixels wide, and its credit." />
+			</aside>
+		</div>
+	</div>
+</SiteLayout>
+
+<style>
+	.layout {
+		display: grid;
+		gap: calc(var(--spacing) * 12);
+	}
+
+	@media (width >= 52rem) {
+		.layout {
+			grid-template-columns: minmax(0, 1fr) 15rem;
+		}
+	}
+
+	.bio {
+		color: var(--ink-muted);
+	}
+
+	.count {
+		font-size: var(--fs-caption);
+		font-weight: var(--weight-body);
+		color: var(--ink-faint);
+		margin-inline-start: 0.5em;
+	}
+
+	.portrait {
+		width: 100%;
+		max-width: 15rem;
+		aspect-ratio: 1;
+		object-fit: cover;
+		background-color: var(--surface-sunken);
+	}
+
+	.profiles {
+		display: flex;
+		flex-wrap: wrap;
+		gap: calc(var(--spacing) * 2) calc(var(--spacing) * 6);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+</style>

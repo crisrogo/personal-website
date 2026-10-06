@@ -1,0 +1,7 @@
+# Works OpenAlex attributes to Cristobal that should not appear on the site.
+# The fetch script skips any DOI listed here, so a wrong attribution cannot
+# come back on the next run. Give a reason, so the decision can be revisited.
+
+- doi: 10.48550/arxiv.2411.09593
+  title: "SMILE-UHURA Challenge: Small Vessel Segmentation at Mesoscopic Scale from Ultra-High Resolution 7T Magnetic Resonance Angiograms"
+  reason: "On hold. Not in the ORCID record, outside the field, and author 25 of 48. Delete this entry if the paper is yours. See OPEN_QUESTIONS.md."

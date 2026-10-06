@@ -1,0 +1,51 @@
+# Builds the site on every push, so a broken page is caught at once.
+#
+# Deploying is manual while GitHub Pages is off (see OPEN_QUESTIONS.md). Once
+# the content is approved:
+#   1. Settings > Pages > Build and deployment > Source: GitHub Actions.
+#   2. Actions > Site > Run workflow. That run builds and deploys.
+#   3. To deploy on every push from then on, delete the `if:` line on the
+#      deploy job.
+
+name: Site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name == 'workflow_dispatch'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

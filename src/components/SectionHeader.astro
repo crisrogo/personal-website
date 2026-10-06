@@ -1,0 +1,57 @@
+---
+interface Props {
+	title: string;
+	lead?: string;
+	action?: { href: string; label: string };
+}
+
+const { title, lead, action } = Astro.props;
+---
+
+<header class="section-header">
+	<div class="head-row">
+		<h2 class="t-h2">{title}</h2>
+		{action && <a href={action.href} class="link-more">{action.label}</a>}
+	</div>
+	{lead && <p class="t-lead measure lead">{lead}</p>}
+</header>
+
+<style>
+	/*
+	 * Nothing above the heading. No rule, and no short accent tick either: a
+	 * coloured stub over every section is its own kind of repetition. More
+	 * space above a heading than below it is what separates sections.
+	 */
+	.section-header {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 3);
+		margin-block-end: calc(var(--spacing) * 9);
+	}
+
+	.head-row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 0.5rem 1.5rem;
+	}
+
+	.lead {
+		color: var(--ink-muted);
+	}
+
+	.link-more {
+		font-size: var(--fs-small);
+		color: var(--accent);
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.22em;
+		text-decoration-color: color-mix(in oklab, var(--accent) 35%, transparent);
+		white-space: nowrap;
+	}
+
+	.link-more:hover {
+		text-decoration-color: var(--accent);
+	}
+</style>

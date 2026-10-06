@@ -1,0 +1,63 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import Figure from '../../components/Figure.astro';
+import WorkList from '../../components/WorkList.astro';
+import { byDoi, type Work } from '../../lib/publications';
+import { link } from '../../lib/site';
+
+export async function getStaticPaths() {
+	const research = await getCollection('research');
+	return research.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+interface Props {
+	entry: CollectionEntry<'research'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+// Every DOI listed in the front matter must exist in publications.json. A
+// missing one stops the build here, so a paper cannot quietly fall off a page.
+const works: Work[] = entry.data.works.map((doi) => {
+	const work = byDoi(doi);
+	if (!work) throw new Error(`research/${entry.id}.md lists ${doi}, which is not in src/data/publications.json`);
+	return work;
+});
+const papers = works.filter((w) => w.category !== 'dataset');
+const datasets = works.filter((w) => w.category === 'dataset');
+---
+
+<SiteLayout title={entry.data.title} description={entry.data.summary}>
+	<div class="shell section-y">
+		<p class="t-label mb-[calc(var(--spacing)*6)]">
+			<a href={link('/research/')} class="link-inline">&larr; Research</a>
+		</p>
+
+		<PageHeader title={entry.data.title} lead={entry.data.summary} />
+
+		<div class="prose-body">
+			<Content />
+		</div>
+
+		{entry.data.figure && entry.data.figureCaption && (
+			<div class="mt-[calc(var(--spacing)*12)] max-w-[60rem]">
+				<Figure src={entry.data.figure} alt={entry.data.figureAlt ?? ''} caption={entry.data.figureCaption} width={960} />
+			</div>
+		)}
+
+		<section class="mt-[calc(var(--spacing)*14)]">
+			<h2 class="t-h3 mb-[calc(var(--spacing)*5)]">Papers</h2>
+			<WorkList works={papers} />
+		</section>
+
+		{datasets.length > 0 && (
+			<section class="mt-[calc(var(--spacing)*12)]">
+				<h2 class="t-h3 mb-[calc(var(--spacing)*5)]">Data</h2>
+				<WorkList works={datasets} showVenue={false} />
+			</section>
+		)}
+	</div>
+</SiteLayout>

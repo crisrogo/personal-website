@@ -1,0 +1,39 @@
+---
+import { PERSON, PROFILES } from '../lib/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+	<div class="shell flex flex-col gap-[calc(var(--spacing)*5)] py-[calc(var(--spacing)*12)]">
+		<p class="t-small" style="color: var(--ink-muted)">
+			{PERSON.name}, {PERSON.role}, {PERSON.department}, {PERSON.institution}.
+		</p>
+		<ul class="profiles">
+			{PROFILES.map((p) => (
+				<li><a href={p.href} class="link-inline t-small" rel="me noopener">{p.label}</a></li>
+			))}
+		</ul>
+		<p class="t-caption" style="color: var(--ink-faint)">
+			&copy; {year} {PERSON.name}. Figures from published papers are credited where they appear and
+			reused under their CC BY licences.
+		</p>
+	</div>
+</footer>
+
+<style>
+	.site-footer {
+		background-color: var(--surface-sunken);
+		border-top: var(--stroke) solid var(--border);
+		margin-top: var(--section-y);
+	}
+
+	.profiles {
+		display: flex;
+		flex-wrap: wrap;
+		gap: calc(var(--spacing) * 2) calc(var(--spacing) * 6);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+</style>

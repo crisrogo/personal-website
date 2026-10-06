@@ -1,0 +1,50 @@
+---
+/*
+ * One paper, dataset or abstract. The author list is shortened around
+ * Cristobal's own name, so a reader always sees where he sits in it, and his
+ * name is set in bold. The DOI is printed because funders and reviewers copy
+ * it into forms.
+ */
+import { shortAuthors, type Work } from '../lib/publications';
+
+interface Props {
+	work: Work;
+	/** Print the venue line. Off where the venue is obvious, e.g. datasets. */
+	showVenue?: boolean;
+}
+
+const { work, showVenue = true } = Astro.props;
+const authors = shortAuthors(work.authors);
+---
+
+<li class="work">
+	<p class="t-body title">
+		<a href={work.url} class="link-quiet" rel="noopener">{work.title}</a>
+	</p>
+	{/* One line on purpose: with HTML compression off, a line break here would
+	    print as a space before every comma. */}
+	<p class="t-meta">{authors.map((a, i) => <>{i > 0 && ', '}{a === 'gap' ? <span aria-label="other authors">&hellip;</span> : a.me ? <strong class="me">{a.name}</strong> : a.name}</>)}</p>
+	<p class="t-meta">
+		{showVenue && work.venue && <>{work.venue} &middot; </>}
+		<time>{work.year}</time>
+		{work.doi && <> &middot; <span class="t-mono">{work.doi}</span></>}
+	</p>
+</li>
+
+<style>
+	.work {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 1);
+		padding-block-start: calc(var(--spacing) * 4);
+		border-top: var(--stroke) solid var(--border);
+	}
+
+	.title {
+		font-weight: 500;
+	}
+
+	.me {
+		color: var(--ink);
+	}
+</style>

@@ -1,0 +1,27 @@
+# Works to add or correct by hand, for anything OpenAlex misses or gets wrong.
+# An entry whose DOI matches a fetched work changes only the fields it gives.
+# Any other entry is added as a new work, so give it every field.
+#
+# Fields:
+#   title, year, date (YYYY-MM-DD), venue, doi, url,
+#   category: article | conference | preprint | abstract | dataset | thesis
+#   authors: a list of { name } with { name, me: true } for yourself
+#   position: your place in the author list, counting from 1
+#
+# Example:
+# - title: "A paper OpenAlex has not found yet"
+#   year: 2026
+#   date: 2026-11-01
+#   venue: Journal name
+#   doi: 10.1234/example
+#   url: https://doi.org/10.1234/example
+#   category: article
+#   position: 1
+#   authors:
+#     - { name: Cristobal Rodero, me: true }
+#     - { name: Steven Niederer }
+
+# OpenAlex files the CEIG 2016 paper as a journal article. It is a paper in
+# the proceedings of the Spanish Computer Graphics Conference.
+- doi: 10.2312/ceig.20161314
+  category: conference

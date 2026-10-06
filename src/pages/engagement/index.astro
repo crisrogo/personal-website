@@ -1,0 +1,84 @@
+---
+import { getCollection, render } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import Placeholder from '../../components/Placeholder.astro';
+
+const KIND_LABELS = {
+	writing: 'Writing for young readers',
+	exhibition: 'Exhibition',
+	media: 'In the news',
+	art: 'Art',
+	talk: 'Public talk',
+	schools: 'Schools',
+} as const;
+
+const entries = (await getCollection('engagement'))
+	.filter((e) => !e.data.draft)
+	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const rendered = await Promise.all(entries.map(async (e) => ({ entry: e, Content: (await render(e)).Content })));
+---
+
+<SiteLayout title="Engagement">
+	<div class="shell section-y">
+		<PageHeader
+			title="Engagement"
+			lead="Explaining virtual hearts to people outside research: articles for young readers, an exhibition, the news, and art made from simulation meshes."
+		/>
+
+		<ol class="entries">
+			{rendered.map(({ entry, Content }) => (
+				<li class="entry" id={entry.id}>
+					<p class="t-meta">
+						{KIND_LABELS[entry.data.kind]} &middot; {entry.data.venue} &middot;{' '}
+						<time datetime={entry.data.date.toISOString().slice(0, 10)}>
+							{entry.data.dateLabel ?? entry.data.date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+						</time>
+					</p>
+					<h2 class="t-h3">{entry.data.title}</h2>
+					<p class="t-small role">{entry.data.role}</p>
+					<div class="prose-body"><Content /></div>
+					{entry.data.links.length > 0 && (
+						<p class="links t-small">
+							{entry.data.links.map((l) => <a href={l.url} class="link-inline" rel="noopener">{l.text}</a>)}
+						</p>
+					)}
+				</li>
+			))}
+		</ol>
+
+		<div class="mt-[calc(var(--spacing)*12)] flex flex-col gap-[calc(var(--spacing)*4)]">
+			<h2 class="t-h3">Still to add</h2>
+			<Placeholder need="Public talks, school visits, open days, science festivals, patient and public involvement, and any press or radio. Each needs a date, a place, your role and, if possible, a link. See OPEN_QUESTIONS.md." />
+		</div>
+	</div>
+</SiteLayout>
+
+<style>
+	.entries {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.entry {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 2.5);
+		padding-block: calc(var(--spacing) * 8);
+		border-top: var(--stroke) solid var(--border);
+		scroll-margin-top: 5rem;
+	}
+
+	.role {
+		color: var(--ink-faint);
+	}
+
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: calc(var(--spacing) * 2) calc(var(--spacing) * 6);
+	}
+</style>

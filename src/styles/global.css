@@ -1,0 +1,315 @@
+@import 'tailwindcss';
+
+/*
+ * Tokens.
+ *
+ * Adapted from the CEMRG site's token contract, with three deliberate changes:
+ * no printed grid, no group crimson, and one file instead of a theme layer,
+ * because a personal site has one look. Components read these names and never
+ * a raw colour or size, so a later change of palette is made here only.
+ *
+ * Colour. The accent comes from viridis, the colour map used in the figures,
+ * so the page and the science share one palette. Only the dark end of viridis
+ * is used for text, because the light end fails contrast on white:
+ *   --accent  #3e4989  viridis at 0.25, 8.34:1 on white
+ *   --accent-strong  #2b3a73  hover and pressed links, 10.74:1 on white
+ * The greys are tinted towards the same indigo. Every text colour clears
+ * WCAG AA on --surface and on --surface-sunken (checked, not assumed).
+ * The figures are mostly red hearts, which the indigo leaves alone.
+ */
+
+:root {
+	color-scheme: light;
+
+	--surface: #ffffff;
+	--surface-sunken: #f6f6f9;
+
+	--ink: #16151c;
+	--ink-muted: #4a4856;
+	--ink-faint: #686574;
+
+	--accent: #3e4989;
+	--accent-strong: #2b3a73;
+	--accent-soft: #f0f1f7;
+
+	--border: #e4e3ea;
+	--focus: #3e4989;
+
+	/* Archivo for everything that is read; Azeret Mono only for real
+	   quantities and identifiers (DOIs). Same pair as the CEMRG site. */
+	--face-display: 'Archivo Variable', system-ui, sans-serif;
+	--face-body: 'Archivo Variable', system-ui, sans-serif;
+	--face-mono: 'Azeret Mono Variable', ui-monospace, monospace;
+
+	--fs-caption: clamp(0.75rem, 0.73rem + 0.09vw, 0.8125rem);
+	--fs-small: clamp(0.875rem, 0.85rem + 0.09vw, 0.9375rem);
+	--fs-body: clamp(1rem, 0.97rem + 0.14vw, 1.0625rem);
+	--fs-lead: clamp(1.125rem, 1.05rem + 0.33vw, 1.375rem);
+	--fs-h3: clamp(1.125rem, 1.06rem + 0.28vw, 1.3125rem);
+	--fs-h2: clamp(1.5rem, 1.28rem + 0.94vw, 2.125rem);
+	--fs-h1: clamp(1.875rem, 1.5rem + 1.6vw, 2.875rem);
+	--fs-display: clamp(2.25rem, 1.55rem + 3vw, 4rem);
+
+	--lh-display: 1.02;
+	--lh-heading: 1.14;
+	--lh-body: 1.6;
+
+	--track-display: -0.03em;
+	--track-heading: -0.018em;
+
+	--weight-display: 700;
+	--weight-heading: 600;
+	--weight-body: 400;
+	--weight-strong: 600;
+
+	--stretch-display: 112%;
+
+	--radius: 0px;
+	--stroke: 1px;
+
+	--spacing: 0.25rem;
+	--gutter: clamp(1rem, 0.6rem + 2vw, 3rem);
+	--section-y: clamp(3rem, 2rem + 4vw, 6rem);
+	--shell-max: 72rem;
+	/* A reading measure for running text. The CEMRG site removed it to sit
+	   beside full-width grids; this site is mostly prose, so it keeps one. */
+	--measure: 68ch;
+}
+
+/* Bridge the tokens into Tailwind, so `text-ink-muted` follows the token. */
+@theme inline {
+	--color-surface: var(--surface);
+	--color-surface-sunken: var(--surface-sunken);
+	--color-ink: var(--ink);
+	--color-ink-muted: var(--ink-muted);
+	--color-ink-faint: var(--ink-faint);
+	--color-accent: var(--accent);
+	--color-accent-soft: var(--accent-soft);
+	--color-line: var(--border);
+
+	--font-display: var(--face-display);
+	--font-body: var(--face-body);
+	--font-mono: var(--face-mono);
+}
+
+@layer base {
+	*,
+	::before,
+	::after {
+		border-color: var(--border);
+	}
+
+	html {
+		-webkit-text-size-adjust: 100%;
+		scroll-behavior: smooth;
+		caret-color: var(--accent);
+		accent-color: var(--accent);
+		scrollbar-color: var(--border) transparent;
+		scrollbar-width: thin;
+	}
+
+	body {
+		background-color: var(--surface);
+		color: var(--ink);
+		font-family: var(--face-body);
+		font-size: var(--fs-body);
+		font-weight: var(--weight-body);
+		line-height: var(--lh-body);
+		font-synthesis-weight: none;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	:focus-visible {
+		outline: 2px solid var(--focus);
+		outline-offset: 2px;
+	}
+
+	::selection {
+		background-color: color-mix(in oklab, var(--accent) 22%, transparent);
+		color: var(--ink);
+	}
+
+	strong,
+	b {
+		font-weight: var(--weight-strong);
+	}
+
+	:where(h1, h2, h3, h4) {
+		text-wrap: balance;
+	}
+
+	:where(p, li) {
+		text-wrap: pretty;
+	}
+
+	/* Years, counts and positions line up in columns. */
+	time,
+	.tabular {
+		font-variant-numeric: tabular-nums;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+
+		*,
+		::before,
+		::after {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+		}
+	}
+}
+
+@layer components {
+	.shell {
+		width: 100%;
+		max-width: var(--shell-max);
+		margin-inline: auto;
+		padding-inline: var(--gutter);
+	}
+
+	.section-y {
+		padding-block: var(--section-y);
+	}
+
+	.measure {
+		max-width: var(--measure);
+	}
+
+	/* ---- Typographic roles. Components ask for a role, never a size. ---- */
+
+	.t-display {
+		font-family: var(--face-display);
+		font-size: var(--fs-display);
+		font-weight: var(--weight-display);
+		font-stretch: var(--stretch-display);
+		line-height: var(--lh-display);
+		letter-spacing: var(--track-display);
+	}
+
+	.t-h1 {
+		font-family: var(--face-display);
+		font-size: var(--fs-h1);
+		font-weight: var(--weight-display);
+		font-stretch: var(--stretch-display);
+		line-height: var(--lh-heading);
+		letter-spacing: var(--track-heading);
+	}
+
+	.t-h2 {
+		font-family: var(--face-display);
+		font-size: var(--fs-h2);
+		font-weight: var(--weight-heading);
+		font-stretch: var(--stretch-display);
+		line-height: var(--lh-heading);
+		letter-spacing: var(--track-heading);
+	}
+
+	.t-h3 {
+		font-family: var(--face-display);
+		font-size: var(--fs-h3);
+		font-weight: var(--weight-heading);
+		line-height: var(--lh-heading);
+		letter-spacing: var(--track-heading);
+	}
+
+	.t-lead {
+		font-size: var(--fs-lead);
+		line-height: 1.5;
+	}
+
+	.t-small {
+		font-size: var(--fs-small);
+		line-height: 1.5;
+	}
+
+	.t-caption {
+		font-size: var(--fs-caption);
+		line-height: 1.45;
+	}
+
+	.t-label {
+		font-size: var(--fs-caption);
+		font-weight: var(--weight-strong);
+		line-height: 1.2;
+		letter-spacing: 0.01em;
+	}
+
+	.t-meta {
+		font-size: var(--fs-small);
+		line-height: 1.45;
+		font-variant-numeric: tabular-nums;
+		color: var(--ink-faint);
+	}
+
+	.t-mono {
+		font-family: var(--face-mono);
+		font-size: 0.86em;
+	}
+
+	/* Links inside running text: underlined at rest, never hover-only. */
+	.link-inline {
+		color: var(--accent);
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.18em;
+		text-decoration-color: color-mix(in oklab, var(--accent) 45%, transparent);
+		transition: text-decoration-color 150ms ease, color 150ms ease;
+	}
+
+	.link-inline:hover {
+		color: var(--accent-strong);
+		text-decoration-color: var(--accent-strong);
+	}
+
+	/* A title that links somewhere: plain at rest, accent on hover. Used where
+	   the whole row is obviously a link, as in a list of papers. */
+	.link-quiet {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.link-quiet:hover,
+	.link-quiet:focus-visible {
+		color: var(--accent);
+	}
+
+	/* Markdown bodies. Paragraph rhythm and inline links, nothing else. */
+	.prose-body {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 4);
+		max-width: var(--measure);
+	}
+
+	.prose-body :where(p, li) {
+		color: var(--ink-muted);
+	}
+
+	.prose-body :where(h2) {
+		font-size: var(--fs-h3);
+		font-weight: var(--weight-heading);
+		color: var(--ink);
+		margin-block-start: calc(var(--spacing) * 4);
+	}
+
+	.prose-body :where(a) {
+		color: var(--accent);
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.18em;
+		text-decoration-color: color-mix(in oklab, var(--accent) 45%, transparent);
+	}
+
+	.prose-body :where(ul) {
+		list-style: disc;
+		padding-inline-start: 1.25rem;
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 2);
+	}
+}

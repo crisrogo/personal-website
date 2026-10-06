@@ -1,0 +1,86 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import Placeholder from '../../components/Placeholder.astro';
+import { link } from '../../lib/site';
+
+const research = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<SiteLayout title="Research">
+	<div class="shell section-y">
+		<PageHeader
+			title="Research"
+			lead="Four lines of work, each resting on papers I led. The same question runs through them: when a model of a patient's heart is used to make a decision, how much should we believe it?"
+		/>
+
+		<ol class="lines">
+			{research.map((r) => (
+				<li class="line">
+					<div class="text">
+						<h2 class="t-h2"><a href={link(`/research/${r.id}/`)} class="link-quiet">{r.data.title}</a></h2>
+						<p class="summary">{r.data.summary}</p>
+					</div>
+					{r.data.figure && (
+						<a href={link(`/research/${r.id}/`)} class="thumb" tabindex="-1" aria-hidden="true">
+							<Image src={r.data.figure} alt="" width={420} />
+						</a>
+					)}
+				</li>
+			))}
+		</ol>
+
+		<div class="mt-[calc(var(--spacing)*12)]">
+			<h2 class="t-h3 mb-[calc(var(--spacing)*3)]">Current work</h2>
+			<Placeholder need="Two or three sentences on what you are working on now and what you want to do next. This is the paragraph a fellowship panel reads to judge where you are going. See OPEN_QUESTIONS.md." />
+		</div>
+	</div>
+</SiteLayout>
+
+<style>
+	.lines {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.line {
+		display: grid;
+		gap: calc(var(--spacing) * 6);
+		padding-block: calc(var(--spacing) * 8);
+		border-top: var(--stroke) solid var(--border);
+	}
+
+	@media (width >= 48rem) {
+		.line {
+			grid-template-columns: minmax(0, 1fr) 16rem;
+			align-items: start;
+		}
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 3);
+	}
+
+	.summary {
+		color: var(--ink-muted);
+		font-size: var(--fs-lead);
+		line-height: 1.5;
+		max-width: var(--measure);
+	}
+
+	/* The whole figure, letterboxed on white: a crop would cut labels in half. */
+	.thumb :global(img) {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4 / 3;
+		object-fit: contain;
+		background-color: var(--surface);
+	}
+</style>

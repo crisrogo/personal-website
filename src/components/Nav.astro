@@ -1,0 +1,91 @@
+---
+import { NAV, PERSON, link } from '../lib/site';
+
+const here = Astro.url.pathname;
+const isCurrent = (href: string) => here.startsWith(link(href));
+---
+
+<header class="site-nav">
+	<div class="shell inner">
+		<a href={link('/')} class="name" aria-current={here === link('/') ? 'page' : undefined}>{PERSON.name}</a>
+		<nav aria-label="Main">
+			<ul>
+				{NAV.map((item) => (
+					<li>
+						<a href={link(item.href)} class="nav-link" aria-current={isCurrent(item.href) ? 'page' : undefined}>
+							{item.label}
+						</a>
+					</li>
+				))}
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<style>
+	.site-nav {
+		position: sticky;
+		top: 0;
+		z-index: 20;
+		background-color: color-mix(in oklab, var(--surface) 92%, transparent);
+		backdrop-filter: blur(10px);
+		border-block-end: var(--stroke) solid var(--border);
+	}
+
+	@supports not (backdrop-filter: blur(4px)) {
+		.site-nav {
+			background-color: var(--surface);
+		}
+	}
+
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: calc(var(--spacing) * 2) calc(var(--spacing) * 6);
+		padding-block: calc(var(--spacing) * 3);
+		flex-wrap: wrap;
+	}
+
+	/* The name is the mark. No logo: a personal site should not wear a group's. */
+	.name {
+		font-family: var(--face-display);
+		font-size: var(--fs-h3);
+		font-weight: var(--weight-display);
+		font-stretch: var(--stretch-display);
+		letter-spacing: var(--track-heading);
+		color: var(--ink);
+		text-decoration: none;
+	}
+
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0 calc(var(--spacing) * 4);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav-link {
+		display: inline-block;
+		font-size: var(--fs-small);
+		font-weight: 500;
+		padding: 0.5rem 0.2rem;
+		color: var(--ink-muted);
+		text-decoration: none;
+		border-block-end: 2px solid transparent;
+		transition: color 160ms ease, border-color 160ms ease;
+	}
+
+	.nav-link:hover {
+		color: var(--ink);
+		border-block-end-color: color-mix(in oklab, var(--accent) 45%, transparent);
+	}
+
+	.nav-link[aria-current='page'] {
+		color: var(--ink);
+		border-block-end-color: var(--accent);
+	}
+</style>

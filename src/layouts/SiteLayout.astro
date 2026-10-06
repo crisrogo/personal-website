@@ -1,0 +1,73 @@
+---
+/*
+ * The one layout. Archivo for reading and Azeret Mono for identifiers, the
+ * same pair as the CEMRG site, loaded from npm so no request leaves the site.
+ */
+import '@fontsource-variable/archivo';
+import '@fontsource-variable/azeret-mono';
+import '../styles/global.css';
+
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import { PERSON, link } from '../lib/site';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title,
+	description = `${PERSON.name}, ${PERSON.role} at the ${PERSON.department}, ${PERSON.institution}. Cardiac modelling, virtual patient cohorts, calibration and in-silico trials.`,
+} = Astro.props;
+
+const fullTitle = title ? `${title} | ${PERSON.name}` : PERSON.name;
+
+// Kept on until Cristobal approves the content and switches GitHub Pages on.
+// A named constant so it cannot fall off by accident. See OPEN_QUESTIONS.md.
+const NOINDEX_UNTIL_LAUNCH = true;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
+---
+
+<!doctype html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href={link('/favicon.svg')} />
+		<title>{fullTitle}</title>
+		<meta name="description" content={description} />
+		{NOINDEX_UNTIL_LAUNCH && <meta name="robots" content="noindex, nofollow" />}
+		<link rel="canonical" href={canonical} />
+
+		<meta property="og:type" content="profile" />
+		<meta property="og:title" content={fullTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta name="twitter:card" content="summary" />
+	</head>
+	<body>
+		<a href="#main" class="skip-link">Skip to content</a>
+		<Nav />
+		<main id="main"><slot /></main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.skip-link {
+		position: absolute;
+		inset-inline-start: -100vw;
+		z-index: 50;
+	}
+
+	.skip-link:focus {
+		inset-inline-start: 1rem;
+		inset-block-start: 1rem;
+		background-color: var(--surface);
+		color: var(--ink);
+		padding: 0.6rem 1rem;
+		border: var(--stroke) solid var(--accent);
+	}
+</style>

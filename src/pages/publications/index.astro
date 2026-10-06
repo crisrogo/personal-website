@@ -1,0 +1,71 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import WorkList from '../../components/WorkList.astro';
+import { CATEGORY_LABELS, byCategory, firstAuthoredArticles, type Category } from '../../lib/publications';
+import { PROFILES, link } from '../../lib/site';
+
+const firstAuthored = firstAuthoredArticles();
+const sections = (Object.keys(CATEGORY_LABELS) as Exclude<Category, 'dataset'>[])
+	.map((category) => ({ category, label: CATEGORY_LABELS[category], works: byCategory(category) }))
+	.filter((s) => s.works.length > 0);
+
+const orcid = PROFILES.find((p) => p.label === 'ORCID')!;
+const scholar = PROFILES.find((p) => p.label === 'Google Scholar')!;
+---
+
+<SiteLayout title="Publications">
+	<div class="shell section-y">
+		<PageHeader
+			title="Publications"
+			lead="Newest first. My name is in bold, and long author lists are shortened around it, so my place in each list is always visible."
+		>
+			<p class="t-small measure" style="color: var(--ink-muted)">
+				The list is built from OpenAlex and checked against my <a href={orcid.href} class="link-inline">ORCID record</a>.
+				Datasets are on the <a href={link('/data-and-code/')} class="link-inline">data and code</a> page. Citation
+				counts are on <a href={scholar.href} class="link-inline">Google Scholar</a>.
+			</p>
+		</PageHeader>
+
+		<nav aria-label="Sections" class="jump t-small">
+			<a href="#first-author" class="link-inline">First-author articles</a>
+			{sections.map((s) => <a href={`#${s.category}`} class="link-inline">{s.label}</a>)}
+		</nav>
+
+		<section id="first-author" class="block">
+			<h2 class="t-h2">First-author articles</h2>
+			<WorkList works={firstAuthored} />
+		</section>
+
+		{sections.map((s) => (
+			<section id={s.category} class="block">
+				<h2 class="t-h2">{s.label} <span class="count tabular">{s.works.length}</span></h2>
+				<WorkList works={s.works} />
+			</section>
+		))}
+	</div>
+</SiteLayout>
+
+<style>
+	.jump {
+		display: flex;
+		flex-wrap: wrap;
+		gap: calc(var(--spacing) * 2) calc(var(--spacing) * 6);
+		margin-block-end: calc(var(--spacing) * 6);
+	}
+
+	.block {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 6);
+		padding-block-start: calc(var(--spacing) * 12);
+		scroll-margin-top: 5rem;
+	}
+
+	.count {
+		font-size: var(--fs-small);
+		font-weight: var(--weight-body);
+		color: var(--ink-faint);
+		margin-inline-start: 0.4em;
+	}
+</style>

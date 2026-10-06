@@ -1,0 +1,171 @@
+---
+/*
+ * The CV, in two halves. The narrative follows the four modules of UKRI's
+ * Résumé for Research and Innovation (R4RI), which every UKRI application has
+ * used since January 2024, so it can be copied into an application and cut to
+ * length. The record below it is the evidence the narrative draws on.
+ *
+ * Counts are computed from publications.json, so they cannot drift from the
+ * publication list.
+ */
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import Placeholder from '../../components/Placeholder.astro';
+import { POSITIONS, EDUCATION, FUNDING, REVIEWING, type CvLine } from '../../data/cv';
+import { byCategory, byDoi, firstAuthoredArticles } from '../../lib/publications';
+import { link } from '../../lib/site';
+
+const firstAuthored = firstAuthoredArticles().length;
+const coAuthored = byCategory('article').filter((w) => w.position > 1 && w.venue !== 'Frontiers for Young Minds').length;
+const datasets = byCategory('dataset').length;
+const thesis = byCategory('thesis')[0];
+const words = (n: number) =>
+	['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'][n] ?? String(n);
+
+const doi = (d: string) => byDoi(d)?.url ?? `https://doi.org/${d}`;
+
+const record: { heading: string; lines: CvLine[] }[] = [
+	{ heading: 'Positions', lines: POSITIONS },
+	{ heading: 'Education', lines: EDUCATION },
+	{ heading: 'Funding', lines: FUNDING },
+];
+---
+
+<SiteLayout title="CV">
+	<div class="shell section-y">
+		<PageHeader
+			title="Curriculum vitae"
+			lead="A narrative CV in the four parts of UKRI's Résumé for Research and Innovation, followed by the record it draws on."
+		>
+			<Placeholder need="A PDF of the full CV to download. See OPEN_QUESTIONS.md." />
+		</PageHeader>
+
+		<section class="block">
+			<h2 class="t-h2">Contributions to knowledge</h2>
+			<div class="prose-body">
+				<p>
+					I build cohorts of virtual hearts from clinical images and use them to find which features of a patient
+					matter for the function of the heart and for its response to treatment. I have led {words(firstAuthored)}
+					journal articles as first author and contributed to {coAuthored} more as a co-author.
+				</p>
+				<p>
+					In my PhD I showed that the shape modes that explain most of the anatomical variation of healthy hearts do
+					not explain equivalent levels of variation in their simulated function, so a model that keeps only a few
+					modes can lose accuracy (<a href={doi('10.1371/journal.pcbi.1008851')}>Rodero et al., 2021</a>). I then showed that
+					reusing the simulations of earlier patients makes it cheaper to calibrate each new one
+					(<a href={doi('10.1007/s10439-022-03095-9')}>Rodero et al., 2022</a>). Most recently, in five anatomical
+					phenotypes of hypertrophic cardiomyopathy, I found that functional remodelling changed which mechanisms
+					governed cardiac performance more than anatomy alone did
+					(<a href={doi('10.1016/j.yjmcc.2026.08.002')}>Rodero et al., 2026</a>).
+				</p>
+			</div>
+		</section>
+
+		<section class="block">
+			<h2 class="t-h2">Development of others</h2>
+			<Placeholder need="Students you have supervised or co-supervised (MSc, PhD, summer and UROP projects) and where they went next; teaching and demonstrating; tutorials or training you have given, e.g. on emulators or sensitivity analysis; mentoring. R4RI weighs this module as heavily as the first, and nothing public covers it yet." />
+		</section>
+
+		<section class="block">
+			<h2 class="t-h2">Contributions to the research community</h2>
+			<div class="prose-body">
+				<p>
+					I release what I build. There are {datasets} datasets on Zenodo with my name on them, including the
+					meshes and simulations behind my papers, and the code for four of my papers is on
+					<a href={link('/data-and-code/')}>GitHub</a>. My systematic review of cardiac in-silico trials found that
+					97% of them gave no link to their data or models, and called for minimal reporting standards on patient
+					demographics and more sharing of models and data (<a href={doi('10.1088/2516-1091/acdc71')}>Rodero et al., 2023</a>). I have reviewed for the
+					{REVIEWING.join(', ')}.
+				</p>
+			</div>
+			<Placeholder need="Other journals you review for, conference sessions or workshops you have organised, committees, and work for the group such as the new CEMRG website." />
+		</section>
+
+		<section class="block">
+			<h2 class="t-h2">Contributions to society</h2>
+			<div class="prose-body">
+				<p>
+					I explain cardiac modelling to people outside research. I wrote an article on heart simulations for
+					Frontiers for Young Minds, a journal reviewed by young people, and co-wrote a second one on in-silico
+					trials. With two colleagues from King's College London I worked with the artist group TripleDotMakers
+					and the ECHO Teens, young people with congenital heart conditions and their siblings, on Heartificial
+					Intelligence, an installation at Science Gallery London. The
+					details are on the <a href={link('/engagement/')}>engagement</a> page.
+				</p>
+			</div>
+		</section>
+
+		<h2 class="t-h2 record-title">The record</h2>
+
+		{record.map((r) => (
+			<section class="block">
+				<h3 class="t-h3">{r.heading}</h3>
+				<ol class="lines">
+					{r.lines.map((line) => (
+						<li class="line">
+							<p class="t-meta years tabular">{line.years}</p>
+							<div>
+								<p class="line-title">{line.title}</p>
+								<p class="t-small place">{line.place}</p>
+								{line.note && <p class="t-small place">{line.note}</p>}
+							</div>
+						</li>
+					))}
+				</ol>
+				{r.heading === 'Funding' && (
+					<Placeholder need="Grants, fellowships, travel awards and prizes, with your role (PI, co-I, named researcher) and the amount where you can share it. ORCID lists only the European Commission entry, 2017 to 2022." />
+				)}
+			</section>
+		))}
+
+		{thesis && (
+			<section class="block">
+				<h3 class="t-h3">Thesis</h3>
+				<p class="measure">
+					<a href={thesis.url} class="link-inline">{thesis.title}</a>. King's College London, {thesis.year}.
+				</p>
+			</section>
+		)}
+	</div>
+</SiteLayout>
+
+<style>
+	.block {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 4);
+		padding-block-start: calc(var(--spacing) * 10);
+	}
+
+	.record-title {
+		padding-block-start: calc(var(--spacing) * 16);
+	}
+
+	.lines {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.line {
+		display: grid;
+		grid-template-columns: 8.5rem minmax(0, 1fr);
+		gap: calc(var(--spacing) * 4);
+		padding-block: calc(var(--spacing) * 3);
+		border-top: var(--stroke) solid var(--border);
+	}
+
+	.years {
+		padding-block-start: 0.15rem;
+	}
+
+	.line-title {
+		font-weight: 500;
+	}
+
+	.place {
+		color: var(--ink-muted);
+	}
+</style>

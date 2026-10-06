@@ -1,0 +1,99 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import WorkList from '../../components/WorkList.astro';
+import { CODE } from '../../data/code';
+import { byCategory, byDoi } from '../../lib/publications';
+
+const datasets = byCategory('dataset');
+
+// Resolve each repository's paper, failing the build on a DOI that is not in
+// publications.json.
+const code = CODE.map((entry) => {
+	const paper = entry.paper ? byDoi(entry.paper) : undefined;
+	if (entry.paper && !paper) throw new Error(`code.ts links ${entry.name} to ${entry.paper}, which is not in publications.json`);
+	return { ...entry, paper };
+});
+const groups = [
+	{ label: 'Code for papers', items: code.filter((c) => c.kind === 'paper') },
+	{ label: 'Teaching and art', items: code.filter((c) => c.kind !== 'paper') },
+];
+---
+
+<SiteLayout title="Data and code">
+	<div class="shell section-y">
+		<PageHeader
+			title="Data and code"
+			lead="The meshes, simulations and code behind my papers, released for other groups to reuse and cite."
+		/>
+
+		<section class="block">
+			<h2 class="t-h2">Datasets <span class="count tabular">{datasets.length}</span></h2>
+			<p class="t-small measure" style="color: var(--ink-muted)">
+				Each DOI points to every version of the record, so it always opens the newest one.
+			</p>
+			<WorkList works={datasets} showVenue={false} />
+		</section>
+
+		{groups.map((g) => (
+			<section class="block">
+				<h2 class="t-h2">{g.label}</h2>
+				<ul class="repos">
+					{g.items.map((c) => (
+						<li class="repo">
+							<p class="t-body name"><a href={c.url} class="link-quiet t-mono" rel="noopener">{c.name}</a></p>
+							<p class="desc">{c.description}</p>
+							{c.paper && (
+								<p class="t-meta">
+									For <a href={c.paper.url} class="link-inline">{c.paper.title}</a> ({c.paper.year})
+								</p>
+							)}
+						</li>
+					))}
+				</ul>
+			</section>
+		))}
+	</div>
+</SiteLayout>
+
+<style>
+	.block {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 5);
+		padding-block-start: calc(var(--spacing) * 10);
+	}
+
+	.count {
+		font-size: var(--fs-small);
+		font-weight: var(--weight-body);
+		color: var(--ink-faint);
+		margin-inline-start: 0.4em;
+	}
+
+	.repos {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 5);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.repo {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing) * 1);
+		padding-block-start: calc(var(--spacing) * 4);
+		border-top: var(--stroke) solid var(--border);
+	}
+
+	.name {
+		font-weight: 500;
+	}
+
+	.desc {
+		color: var(--ink-muted);
+		max-width: var(--measure);
+	}
+</style>

@@ -1,0 +1,3090 @@
+[
+	{
+		"title": "In silico trials for sex-specific patient inclusion criteria in cardiac resynchronization therapy",
+		"authors": [
+			{
+				"name": "Shuang Qian"
+			},
+			{
+				"name": "Devran Uğurlu"
+			},
+			{
+				"name": "Elliot Fairweather"
+			},
+			{
+				"name": "Richard E. Jones"
+			},
+			{
+				"name": "Hassan Zaidi"
+			},
+			{
+				"name": "Sanjay Prasad"
+			},
+			{
+				"name": "Brian P. Halliday"
+			},
+			{
+				"name": "Daniel J. Hammersley"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Derek J. Bivona"
+			},
+			{
+				"name": "Kenneth C. Bilchick"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			},
+			{
+				"name": "Alistair A. Young"
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Martin Bishop"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 11,
+		"year": 2026,
+		"date": "2026-08-19",
+		"venue": "npj Digital Medicine",
+		"doi": "10.1038/s41746-026-03139-7",
+		"url": "https://doi.org/10.1038/s41746-026-03139-7",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Computational models show that functional remodeling, not anatomy, reshapes physiological determinants of cardiac performance in hypertrophic cardiomyopathy",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Lara Curran"
+			},
+			{
+				"name": "Christopher W. Lanyon"
+			},
+			{
+				"name": "Paolo Inglese"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Ludovica Cicci"
+			},
+			{
+				"name": "Edward Burford"
+			},
+			{
+				"name": "Elias Karabelas"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Richard D. Wilkinson"
+			},
+			{
+				"name": "Antonio de Marvao"
+			},
+			{
+				"name": "James S. Ware"
+			},
+			{
+				"name": "Declan O'Regan"
+			},
+			{
+				"name": "Sanjay K. Prasad"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2026,
+		"date": "2026-08-10",
+		"venue": "Journal of Molecular and Cellular Cardiology",
+		"doi": "10.1016/j.yjmcc.2026.08.002",
+		"url": "https://doi.org/10.1016/j.yjmcc.2026.08.002",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Reference (unloaded) configuration simulations in hypertrophic cardiomyopathy patients",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Lara Curran"
+			},
+			{
+				"name": "Christopher W. Lanyon"
+			},
+			{
+				"name": "Paolo Inglese"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Ludovica Cicci"
+			},
+			{
+				"name": "Edward Burford"
+			},
+			{
+				"name": "Elias Karabelas"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Wilkinson, Richard"
+			},
+			{
+				"name": "Antonio de Marvao"
+			},
+			{
+				"name": "James S. Ware"
+			},
+			{
+				"name": "Declan P. O’Regan"
+			},
+			{
+				"name": "Sanjay Prasad"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2026,
+		"date": "2026-08-01",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.21809470",
+		"url": "https://doi.org/10.5281/zenodo.21809470",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "cc-by",
+		"altDois": [
+			"10.5281/zenodo.21809471",
+			"10.5281/zenodo.21809470"
+		]
+	},
+	{
+		"title": "Four-chamber meshes from hypertrophic cardiomyopathy patients",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Lara Curran"
+			},
+			{
+				"name": "Christopher W. Lanyon"
+			},
+			{
+				"name": "Paolo Inglese"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Ludovica Cicci"
+			},
+			{
+				"name": "Edward Burford"
+			},
+			{
+				"name": "Elias Karabelas"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Wilkinson, Richard"
+			},
+			{
+				"name": "Antonio de Marvao"
+			},
+			{
+				"name": "James S. Ware"
+			},
+			{
+				"name": "Declan P. O’Regan"
+			},
+			{
+				"name": "Sanjay Prasad"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2026,
+		"date": "2026-08-01",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.21282273",
+		"url": "https://doi.org/10.5281/zenodo.21282273",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "other-oa",
+		"altDois": [
+			"10.5281/zenodo.21282273",
+			"10.5281/zenodo.21282274"
+		]
+	},
+	{
+		"title": "Electrophysiology simulations in hypertrophic cardiomyopathy patients",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Lara Curran"
+			},
+			{
+				"name": "Christopher W. Lanyon"
+			},
+			{
+				"name": "Paolo Inglese"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Ludovica Cicci"
+			},
+			{
+				"name": "Burford Edward"
+			},
+			{
+				"name": "Elias Karabelas"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Wilkinson, Richard"
+			},
+			{
+				"name": "Antonio de Marvao"
+			},
+			{
+				"name": "James S. Ware"
+			},
+			{
+				"name": "Declan P. O’Regan"
+			},
+			{
+				"name": "Sanjay Prasad"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2026,
+		"date": "2026-08-01",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.21720234",
+		"url": "https://doi.org/10.5281/zenodo.21720234",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "other-oa",
+		"altDois": [
+			"10.5281/zenodo.21720234",
+			"10.5281/zenodo.21720235"
+		]
+	},
+	{
+		"title": "Closed-loop cardiac cycle simulations in hypertrophic cardiomyopathy patients",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Lara Curran"
+			},
+			{
+				"name": "Christopher W. Lanyon"
+			},
+			{
+				"name": "Paolo Inglese"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Ludovica Cicci"
+			},
+			{
+				"name": "Edward Burford"
+			},
+			{
+				"name": "Elias Karabelas"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Wilkinson, Richard"
+			},
+			{
+				"name": "Antonio de Marvao"
+			},
+			{
+				"name": "James S. Ware"
+			},
+			{
+				"name": "Declan P. O’Regan"
+			},
+			{
+				"name": "Sanjay Prasad"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2026,
+		"date": "2026-08-01",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.21822517",
+		"url": "https://doi.org/10.5281/zenodo.21822517",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "cc-by",
+		"altDois": [
+			"10.5281/zenodo.21822518",
+			"10.5281/zenodo.21822517"
+		]
+	},
+	{
+		"title": "Passive inflation simulations in hypertrophic cardiomyopathy patients",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Lara Curran"
+			},
+			{
+				"name": "Christopher W. Lanyon"
+			},
+			{
+				"name": "Paolo Inglese"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Ludovica Cicci"
+			},
+			{
+				"name": "Edward Burford"
+			},
+			{
+				"name": "Elias Karabelas"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Wilkinson, Richard"
+			},
+			{
+				"name": "Antonio de Marvao"
+			},
+			{
+				"name": "James S. Ware"
+			},
+			{
+				"name": "Declan P. O’Regan"
+			},
+			{
+				"name": "Sanjay Prasad"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2026,
+		"date": "2026-08-01",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.21720633",
+		"url": "https://doi.org/10.5281/zenodo.21720633",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "other-oa",
+		"altDois": [
+			"10.5281/zenodo.21720633",
+			"10.5281/zenodo.21720634"
+		]
+	},
+	{
+		"title": "Assessing the importance of sex and disease-specific anatomy in electrophysiology and mechanical simulations with a newly developed public virtual cohort of four-chamber heart models",
+		"authors": [
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Natalie Montarello"
+			},
+			{
+				"name": "Nishant Lahoti"
+			},
+			{
+				"name": "Cesare Corrado"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Hao Xu"
+			},
+			{
+				"name": "Alistair A. Young"
+			},
+			{
+				"name": "Pras Pathmanathan"
+			},
+			{
+				"name": "Ronak Rajani"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 3,
+		"year": 2026,
+		"date": "2026-06-02",
+		"venue": "PLoS Computational Biology",
+		"doi": "10.1371/journal.pcbi.1014325",
+		"url": "https://doi.org/10.1371/journal.pcbi.1014325",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Sex- and Disease-Stratified Patient-Specific Four-Chamber Heart Models from Clinical CT",
+		"authors": [
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Natalie Montarello"
+			},
+			{
+				"name": "Nishant Lahoti"
+			},
+			{
+				"name": "Cesare Corrado"
+			},
+			{
+				"name": "Abdul Qayyuum"
+			},
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "G P Plank"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Hao Xu"
+			},
+			{
+				"name": "Alistair A. Young"
+			},
+			{
+				"name": "Pras Pathmanathan"
+			},
+			{
+				"name": "Ronak Rajani"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 3,
+		"year": 2026,
+		"date": "2026-03-31",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.17048090",
+		"url": "https://doi.org/10.5281/zenodo.17048090",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "cc-by",
+		"altDois": [
+			"10.5281/zenodo.19351401",
+			"10.5281/zenodo.17048090"
+		]
+	},
+	{
+		"title": "A Cohort-Based Global Sensitivity Benchmark of MRI-Derived Whole-Heart Electromechanical Models in Healthy Hearts",
+		"authors": [
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Jim Pouliopoulos"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Samaneh Lashkarinia"
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Diane Fatkin"
+			},
+			{
+				"name": "Andrew Jabbour"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 7,
+		"year": 2026,
+		"date": "2026-03-30",
+		"venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+		"doi": "10.64898/2026.03.27.714701",
+		"url": "https://doi.org/10.64898/2026.03.27.714701",
+		"category": "preprint",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Finite-element meshes of subject-specific four-chamber human heart models derived from cine MRI (5 healthy subjects)",
+		"authors": [
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Jim Pouliopoulos"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "S. Samaneh Lashkarinia"
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Diane Fatkin"
+			},
+			{
+				"name": "Andrew Jabbour"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 7,
+		"year": 2026,
+		"date": "2026-03-24",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.19203951",
+		"url": "https://doi.org/10.5281/zenodo.19203951",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "cc-by",
+		"altDois": [
+			"10.5281/zenodo.19203951",
+			"10.5281/zenodo.19203952"
+		]
+	},
+	{
+		"title": "Personalising cardiac electrophysiology models from CT and ECG for 3D activation imaging and tissue characterisation",
+		"authors": [
+			{
+				"name": "Ludovica Cicci"
+			},
+			{
+				"name": "Shuang Qian"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Cesare Corrado"
+			},
+			{
+				"name": "Fernando Campos"
+			},
+			{
+				"name": "Shambhavi Malik"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Karli K. Gillette"
+			},
+			{
+				"name": "Julia C. Isbister"
+			},
+			{
+				"name": "Raymond Sy"
+			},
+			{
+				"name": "Michael Lee"
+			},
+			{
+				"name": "Michela Noseda"
+			},
+			{
+				"name": "Richard Wilkinson"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Martin J. Bishop"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 3,
+		"year": 2026,
+		"date": "2026-03-09",
+		"venue": "Research Square",
+		"doi": "10.21203/rs.3.rs-8873590/v1",
+		"url": "https://doi.org/10.21203/rs.3.rs-8873590/v1",
+		"category": "preprint",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Testing Treatments Virtually: How Digital Hearts can Save Lives",
+		"authors": [
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 3,
+		"year": 2025,
+		"date": "2025-12-29",
+		"venue": "Frontiers for Young Minds",
+		"doi": "10.3389/frym.2025.1636190",
+		"url": "https://doi.org/10.3389/frym.2025.1636190",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "A unified framework for geometry-independent operator learning in cardiac electrophysiology simulations",
+		"authors": [
+			{
+				"name": "Bei Zhou"
+			},
+			{
+				"name": "Cesare Corrado"
+			},
+			{
+				"name": "Shuang Qian"
+			},
+			{
+				"name": "Maximilian Balmus"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Marco Götte"
+			},
+			{
+				"name": "Luuk H G A Hopman"
+			},
+			{
+				"name": "Plank, Gernot"
+			},
+			{
+				"name": "Mengyun Qiao"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 6,
+		"year": 2025,
+		"date": "2025-12-01",
+		"venue": "arXiv (Cornell University)",
+		"doi": "10.48550/arxiv.2512.01702",
+		"url": "https://doi.org/10.48550/arxiv.2512.01702",
+		"category": "preprint",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Weaving the Digital Tapestry: Methods for Emulating Cohorts of Cardiac Digital Twins Using Gaussian Processes",
+		"authors": [
+			{
+				"name": "Christopher W. Lanyon"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Richard D Wilkinson"
+			}
+		],
+		"position": 2,
+		"year": 2025,
+		"date": "2025-11-17",
+		"venue": "Annals of Biomedical Engineering",
+		"doi": "10.1007/s10439-025-03890-0",
+		"url": "https://doi.org/10.1007/s10439-025-03890-0",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Automated generation of ablation lesion masks: a unison of electro and optic flow mapping for persistent AF virtual cohorts",
+		"authors": [
+			{
+				"name": "Ovais Ahmed Jaffery"
+			},
+			{
+				"name": "Carlos Edgar Lopez Barrera"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Alexander M. Zolotarev"
+			},
+			{
+				"name": "Wilson W. Good"
+			},
+			{
+				"name": "Greg Slabaugh"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Caroline H. Roney"
+			}
+		],
+		"position": 3,
+		"year": 2025,
+		"date": "2025-11-11",
+		"venue": "EP Europace",
+		"doi": "10.1093/europace/euaf290",
+		"url": "https://doi.org/10.1093/europace/euaf290",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by-nc"
+	},
+	{
+		"title": "Regional heterogeneity in left atrial stiffness impacts passive deformation in a cohort of patient-specific models",
+		"authors": [
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Charles Sillett"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Christopher W. Lanyon"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Daniel B. Ennis"
+			},
+			{
+				"name": "Ronak Rajani"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Richard D. Wilkinson"
+			},
+			{
+				"name": "Steven Edwin Williams"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 2,
+		"year": 2025,
+		"date": "2025-11-05",
+		"venue": "PLoS Computational Biology",
+		"doi": "10.1371/journal.pcbi.1013656",
+		"url": "https://doi.org/10.1371/journal.pcbi.1013656",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Comparing the effects of left bundle branch pacing and leadless right ventricular pacing on intraventricular and interventricular dyssynchrony using in silico modelling",
+		"authors": [
+			{
+				"name": "Alphonsus C. Liew"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Karli K. Gillette"
+			},
+			{
+				"name": "Nadeev Wijesuriya"
+			},
+			{
+				"name": "Sandra Howell"
+			},
+			{
+				"name": "Felicity de Vere"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			}
+		],
+		"position": 3,
+		"year": 2025,
+		"date": "2025-10-08",
+		"venue": "Frontiers in Physiology",
+		"doi": "10.3389/fphys.2025.1644520",
+		"url": "https://doi.org/10.3389/fphys.2025.1644520",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Representation of women in cardiovascular disease management: a systematic analysis of ESC guidelines",
+		"authors": [
+			{
+				"name": "S. Samaneh Lashkarinia"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Charles Sillett"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Upasana Tayal"
+			},
+			{
+				"name": "Antonio de Marvao"
+			},
+			{
+				"name": "Nicholas Panay"
+			},
+			{
+				"name": "Catherine Williamson"
+			},
+			{
+				"name": "Carina Blomström‐Lundqvist"
+			},
+			{
+				"name": "Kristina Hermann Haugaa"
+			},
+			{
+				"name": "Barbara Casadei"
+			},
+			{
+				"name": "Mary M. Maleckar"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 6,
+		"year": 2025,
+		"date": "2025-09-01",
+		"venue": "Open Heart",
+		"doi": "10.1136/openhrt-2025-003320",
+		"url": "https://doi.org/10.1136/openhrt-2025-003320",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by-nc"
+	},
+	{
+		"title": "Developing cardiac biomechanical models beyond the clinic: modeling stressors of daily life",
+		"authors": [
+			{
+				"name": "Alexandre Lewalle"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Ludovica Cicci"
+			},
+			{
+				"name": "Cesare Corrado"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 7,
+		"year": 2025,
+		"date": "2025-07-10",
+		"venue": "Biomechanics and Modeling in Mechanobiology",
+		"doi": "10.1007/s10237-025-01982-3",
+		"url": "https://doi.org/10.1007/s10237-025-01982-3",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "SciBlend: Advanced data visualization workflows within Blender",
+		"authors": [
+			{
+				"name": "José Marín"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Steven Edwin Williams"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Ignacio García‐Fernández"
+			}
+		],
+		"position": 3,
+		"year": 2025,
+		"date": "2025-06-19",
+		"venue": "Computers & Graphics",
+		"doi": "10.1016/j.cag.2025.104264",
+		"url": "https://doi.org/10.1016/j.cag.2025.104264",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by-nc-nd"
+	},
+	{
+		"title": "A consensus based electro-optic flow ablation strategy for persistent AF",
+		"authors": [
+			{
+				"name": "Ovais Ahmed Jaffery"
+			},
+			{
+				"name": "Carlos Edgar Lopez Barrera"
+			},
+			{
+				"name": "Alexander Zolotarev"
+			},
+			{
+				"name": "Wilson W. Good"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Greg Slabaugh"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Caroline H. Roney"
+			}
+		],
+		"position": 5,
+		"year": 2025,
+		"date": "2025-04-01",
+		"venue": "Heart Rhythm",
+		"doi": "10.1016/j.hrthm.2025.03.1415",
+		"url": "https://doi.org/10.1016/j.hrthm.2025.03.1415",
+		"category": "abstract",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "Striking the balance: Complexity, simplicity, and credibility in mathematical biology",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2025,
+		"date": "2025-03-24",
+		"venue": "Proceedings of the National Academy of Sciences",
+		"doi": "10.1073/pnas.2504067122",
+		"url": "https://doi.org/10.1073/pnas.2504067122",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by-nc-nd"
+	},
+	{
+		"title": "Identification of atrial myopathy and atrial fibrillation recurrence after ablation using 3D left atrial phasic strain from retrospective gated computed tomography",
+		"authors": [
+			{
+				"name": "Charles Sillett"
+			},
+			{
+				"name": "Orod Razeghi"
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Ruibin Feng"
+			},
+			{
+				"name": "Prasanth Ganesan"
+			},
+			{
+				"name": "Hui Ju Chang"
+			},
+			{
+				"name": "Paul Clopton"
+			},
+			{
+				"name": "Nick Linton"
+			},
+			{
+				"name": "Ronak Rajani"
+			},
+			{
+				"name": "Albert Joseph Rogers"
+			},
+			{
+				"name": "Sanjiv M. Narayan"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 6,
+		"year": 2025,
+		"date": "2025-01-01",
+		"venue": "European Heart Journal - Imaging Methods and Practice",
+		"doi": "10.1093/ehjimp/qyaf027",
+		"url": "https://doi.org/10.1093/ehjimp/qyaf027",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Multi-scale Whole-Heart Electromechanics Modeling to Link Cellular, Tissue and Systemic Properties to Cardiac Biomarkers in the Diabetic Male and Female Heart",
+		"authors": [
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Shuang Qian"
+			},
+			{
+				"name": "Ludovica Cicci"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Devran Uğurlu"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Matthias A. F. Gsell"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 3,
+		"year": 2025,
+		"date": "2025-01-01",
+		"venue": "Lecture notes in computer science",
+		"doi": "10.1007/978-3-031-94559-5_20",
+		"url": "https://doi.org/10.1007/978-3-031-94559-5_20",
+		"category": "conference",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "Cardiac Sensitivities to Biomechanical Changes in a Chronic Alcoholic Heart: A Case Study Using 3-Dimensional Electro-Mechanical Heart Modelling",
+		"authors": [
+			{
+				"name": "Shahrokh Rahmani"
+			},
+			{
+				"name": "Jim Pouliopoulos"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Andrew Jabbour"
+			},
+			{
+				"name": "Diane Fatkin"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 6,
+		"year": 2024,
+		"date": "2024-12-01",
+		"venue": "Computing in cardiology",
+		"doi": "10.22489/cinc.2024.456",
+		"url": "https://doi.org/10.22489/cinc.2024.456",
+		"category": "conference",
+		"openAccess": true,
+		"license": null
+	},
+	{
+		"title": "Unraveling the Influence of Right Ventricle Presence on Paced ECGs",
+		"authors": [
+			{
+				"name": "Fernando  Otaviano Campos"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "John Whitaker"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			},
+			{
+				"name": "Martin Bishop"
+			}
+		],
+		"position": 2,
+		"year": 2024,
+		"date": "2024-12-01",
+		"venue": "Computing in cardiology",
+		"doi": "10.22489/cinc.2024.329",
+		"url": "https://doi.org/10.22489/cinc.2024.329",
+		"category": "conference",
+		"openAccess": true,
+		"license": null
+	},
+	{
+		"title": "An in-silico comparison of anatomical and substrate based AF ablation using electro and optical flow mapping",
+		"authors": [
+			{
+				"name": "Ovais Ahmed Jaffery"
+			},
+			{
+				"name": "A Zolotarev"
+			},
+			{
+				"name": "C E Barera"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Greg Slabaugh"
+			},
+			{
+				"name": "Wilson W. Good"
+			},
+			{
+				"name": "Caroline H. Roney"
+			}
+		],
+		"position": 4,
+		"year": 2024,
+		"date": "2024-10-01",
+		"venue": "European Heart Journal",
+		"doi": "10.1093/eurheartj/ehae666.579",
+		"url": "https://doi.org/10.1093/eurheartj/ehae666.579",
+		"category": "abstract",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "Transforming Heart Chamber Imaging: Self-Supervised Learning for Whole Heart Reconstruction and Segmentation",
+		"authors": [
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Hao Xu"
+			},
+			{
+				"name": "Brian P. Halliday"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Christopher W. Lanyon"
+			},
+			{
+				"name": "Wilkinson, Richard D."
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 4,
+		"year": 2024,
+		"date": "2024-06-09",
+		"venue": "arXiv (Cornell University)",
+		"doi": "10.48550/arxiv.2406.06643",
+		"url": "https://doi.org/10.48550/arxiv.2406.06643",
+		"category": "preprint",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Towards automated generation of ablation lesion masks: a unison of electro and optic flow mapping",
+		"authors": [
+			{
+				"name": "Ovais Ahmed Jaffery"
+			},
+			{
+				"name": "Carlos Edgar Lopez Barrera"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Alexander Zolotarev"
+			},
+			{
+				"name": "Wilson W. Good"
+			},
+			{
+				"name": "Greg Slabaugh"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Caroline H. Roney"
+			}
+		],
+		"position": 3,
+		"year": 2024,
+		"date": "2024-05-01",
+		"venue": "Heart Rhythm",
+		"doi": "10.1016/j.hrthm.2024.03.1434",
+		"url": "https://doi.org/10.1016/j.hrthm.2024.03.1434",
+		"category": "abstract",
+		"openAccess": true,
+		"license": null
+	},
+	{
+		"title": "Anatomical and physiological features improve AF ablation outcome prediction: a combined deep learning and in-silico approach",
+		"authors": [
+			{
+				"name": "Alexander M. Zolotarev"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Sanjiv M. Narayan"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Caroline H. Roney"
+			}
+		],
+		"position": 2,
+		"year": 2024,
+		"date": "2024-05-01",
+		"venue": "Heart Rhythm",
+		"doi": "10.1016/j.hrthm.2024.03.1421",
+		"url": "https://doi.org/10.1016/j.hrthm.2024.03.1421",
+		"category": "abstract",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "Results of the 2023 ISBI challenge to reduce GABA-edited MRS acquisition time",
+		"authors": [
+			{
+				"name": "R. Berto"
+			},
+			{
+				"name": "Hanna Bugler"
+			},
+			{
+				"name": "Gabriel Dias"
+			},
+			{
+				"name": "Mateus Cardoso Oliveira"
+			},
+			{
+				"name": "Lucas Hideki Ueda"
+			},
+			{
+				"name": "Sérgio San Juan Dertkigil"
+			},
+			{
+				"name": "Paula Dornhofer Paro Costa"
+			},
+			{
+				"name": "Letícia Rittner"
+			},
+			{
+				"name": "Julian P. Merkofer"
+			},
+			{
+				"name": "Dennis van de Sande"
+			},
+			{
+				"name": "Sina Amirrajab"
+			},
+			{
+				"name": "Gerhard S. Drenthen"
+			},
+			{
+				"name": "Mitko Veta"
+			},
+			{
+				"name": "Jacobus F.A. Jansen"
+			},
+			{
+				"name": "Marcel M. Breeuwer"
+			},
+			{
+				"name": "Ruud J. G. van Sloun"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Roberto Medeiros de Souza"
+			},
+			{
+				"name": "Ashley D. Harris"
+			}
+		],
+		"position": 18,
+		"year": 2024,
+		"date": "2024-04-13",
+		"venue": "Magnetic Resonance Materials in Physics Biology and Medicine",
+		"doi": "10.1007/s10334-024-01156-9",
+		"url": "https://doi.org/10.1007/s10334-024-01156-9",
+		"category": "article",
+		"openAccess": true,
+		"license": "other-oa"
+	},
+	{
+		"title": "Constructing bilayer and volumetric atrial models at scale",
+		"authors": [
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Carlos Lopez Barrera"
+			},
+			{
+				"name": "Alexander M. Zolotarev"
+			},
+			{
+				"name": "Onur Ulgen"
+			},
+			{
+				"name": "Eric Kerfoot"
+			},
+			{
+				"name": "Laura Bevis"
+			},
+			{
+				"name": "Semhar Biniam Misghina"
+			},
+			{
+				"name": "Caterina Vidal Horrach"
+			},
+			{
+				"name": "Ovais Ahmed Jaffery"
+			},
+			{
+				"name": "Mahmoud Ehnesh"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Dhani Dharmaprani"
+			},
+			{
+				"name": "Gonzalo Ricardo Ríos-Muñoz"
+			},
+			{
+				"name": "Anand Narayan Ganesan"
+			},
+			{
+				"name": "Wilson W. Good"
+			},
+			{
+				"name": "Aurel Neic"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Luuk H G A Hopman"
+			},
+			{
+				"name": "Marco Götte"
+			},
+			{
+				"name": "Shohreh Honarbakhsh"
+			},
+			{
+				"name": "Sanjiv M. Narayan"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 12,
+		"year": 2023,
+		"date": "2023-12-15",
+		"venue": "Interface Focus",
+		"doi": "10.1098/rsfs.2023.0038",
+		"url": "https://doi.org/10.1098/rsfs.2023.0038",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "A Semi-automatic Pipeline for Generation of Large Cohorts of Four-Chamber Heart Meshes",
+		"authors": [
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Caroline Mendonça Costa"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 2,
+		"year": 2023,
+		"date": "2023-12-01",
+		"venue": "Methods in molecular biology",
+		"doi": "10.1007/978-1-0716-3527-8_7",
+		"url": "https://doi.org/10.1007/978-1-0716-3527-8_7",
+		"category": "conference",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "Advancing clinical translation of cardiac biomechanics models: a comprehensive review, applications and future pathways",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Alexandre Lewalle"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Marina Strocchi"
+			}
+		],
+		"position": 1,
+		"year": 2023,
+		"date": "2023-11-14",
+		"venue": "Frontiers in Physics",
+		"doi": "10.3389/fphy.2023.1306210",
+		"url": "https://doi.org/10.3389/fphy.2023.1306210",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Advancing GABA-edited MRS Research through a Reconstruction Challenge",
+		"authors": [
+			{
+				"name": "Rodrigo Pommot Berto"
+			},
+			{
+				"name": "Hanna Bugler"
+			},
+			{
+				"name": "Gabriel Dias"
+			},
+			{
+				"name": "Mateus Cardoso Oliveira"
+			},
+			{
+				"name": "Lucas Hideki Ueda"
+			},
+			{
+				"name": "Sérgio San Juan Dertkigil"
+			},
+			{
+				"name": "Paula Dornhofer Paro Costa"
+			},
+			{
+				"name": "Letícia Rittner"
+			},
+			{
+				"name": "Julian P. Merkofer"
+			},
+			{
+				"name": "Dennis van de Sande"
+			},
+			{
+				"name": "Sina Amirrajab"
+			},
+			{
+				"name": "Gerhard S. Drenthen"
+			},
+			{
+				"name": "Mitko Veta"
+			},
+			{
+				"name": "Jacobus F.A. Jansen"
+			},
+			{
+				"name": "Marcel M. Breeuwer"
+			},
+			{
+				"name": "Ruud J. G. van Sloun"
+			},
+			{
+				"name": "Abdul Qayyum"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Roberto Medeiros de Souza"
+			},
+			{
+				"name": "Ashley D. Harris"
+			}
+		],
+		"position": 18,
+		"year": 2023,
+		"date": "2023-09-22",
+		"venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+		"doi": "10.1101/2023.09.21.557971",
+		"url": "https://doi.org/10.1101/2023.09.21.557971",
+		"category": "preprint",
+		"openAccess": true,
+		"license": "cc-by-nc-nd"
+	},
+	{
+		"title": "A systematic review of cardiac in-silico clinical trials",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Tiffany M G Baptiste"
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Hamed Keramati"
+			},
+			{
+				"name": "Charles Sillett"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2023,
+		"date": "2023-06-07",
+		"venue": "Progress in Biomedical Engineering",
+		"doi": "10.1088/2516-1091/acdc71",
+		"url": "https://doi.org/10.1088/2516-1091/acdc71",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "In silico biatrial fibrosis ablation improves atrial fibrillation outcome",
+		"authors": [
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Joseph Alonso"
+			},
+			{
+				"name": "Iain Sim"
+			},
+			{
+				"name": "O Ulgen"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Irum Kotadia"
+			},
+			{
+				"name": "Shohreh Honarbakhsh"
+			},
+			{
+				"name": "Sanjiv M. Narayan"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Steven Edwin Williams"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 5,
+		"year": 2023,
+		"date": "2023-05-24",
+		"venue": "EP Europace",
+		"doi": "10.1093/europace/euad122.587",
+		"url": "https://doi.org/10.1093/europace/euad122.587",
+		"category": "abstract",
+		"openAccess": true,
+		"license": "cc-by-nc-nd"
+	},
+	{
+		"title": "Atrial fibrillation outcome is improved by biatrial substrate ablation in a large virtual trial",
+		"authors": [
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "José Alonso Solís-Lemus"
+			},
+			{
+				"name": "Shohreh Honarbakhsh"
+			},
+			{
+				"name": "Iain Sim"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Irum Kotadia"
+			},
+			{
+				"name": "Sanjiv M. Narayan"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Steven Edwin Williams"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 5,
+		"year": 2023,
+		"date": "2023-05-01",
+		"venue": "Heart Rhythm",
+		"doi": "10.1016/j.hrthm.2023.03.533",
+		"url": "https://doi.org/10.1016/j.hrthm.2023.03.533",
+		"category": "abstract",
+		"openAccess": true,
+		"license": null
+	},
+	{
+		"title": "Effect of Varying Pericardial Boundary Conditions on Whole Heart Function: A Computational Study",
+		"authors": [
+			{
+				"name": "Justina Ghebryal"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Rosie K. Barrows"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Caroline H. Roney"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 2,
+		"year": 2023,
+		"date": "2023-01-01",
+		"venue": "Lecture notes in computer science",
+		"doi": "10.1007/978-3-031-35302-4_56",
+		"url": "https://doi.org/10.1007/978-3-031-35302-4_56",
+		"category": "conference",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "Computational Biomechanics of Ventricular Dyssynchrony and Resynchronization Therapy",
+		"authors": [
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Caroline Mendonça Costa"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 3,
+		"year": 2023,
+		"date": "2023-01-01",
+		"venue": "Cardiac and vascular biology",
+		"doi": "10.1007/978-3-031-23965-6_12",
+		"url": "https://doi.org/10.1007/978-3-031-23965-6_12",
+		"category": "conference",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "Calibration of Cohorts of Virtual Patient Heart Models Using Bayesian History Matching",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Stefano Longobardi"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2022,
+		"date": "2022-10-21",
+		"venue": "Annals of Biomedical Engineering",
+		"doi": "10.1007/s10439-022-03095-9",
+		"url": "https://doi.org/10.1007/s10439-022-03095-9",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Optimization of anti-tachycardia pacing efficacy through scar-specific delivery and minimization of re-initiation: a virtual study on a cohort of infarcted porcine hearts",
+		"authors": [
+			{
+				"name": "Shuang Qian"
+			},
+			{
+				"name": "Adam J. Connolly"
+			},
+			{
+				"name": "Caroline Mendonça Costa"
+			},
+			{
+				"name": "Fernando  Otaviano Campos"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "John Whitaker"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			},
+			{
+				"name": "Martin J. Bishop"
+			}
+		],
+		"position": 5,
+		"year": 2022,
+		"date": "2022-10-05",
+		"venue": "EP Europace",
+		"doi": "10.1093/europace/euac165",
+		"url": "https://doi.org/10.1093/europace/euac165",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "In silico study of anti-tachycardia pacing efficacy optimisation through scar-targeted stimulation",
+		"authors": [
+			{
+				"name": "Shuang Qian"
+			},
+			{
+				"name": "Adam J. Connolly"
+			},
+			{
+				"name": "Caroline Mendonça Costa"
+			},
+			{
+				"name": "Fernando  Otaviano Campos"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "John Whitaker"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			},
+			{
+				"name": "M Bishop"
+			}
+		],
+		"position": 5,
+		"year": 2022,
+		"date": "2022-05-18",
+		"venue": "EP Europace",
+		"doi": "10.1093/europace/euac053.403",
+		"url": "https://doi.org/10.1093/europace/euac053.403",
+		"category": "abstract",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "An automated algorithm minimising ATP failure: re-initiation to enhance anti-tachycardia pacing efficacy",
+		"authors": [
+			{
+				"name": "Shuang Qian"
+			},
+			{
+				"name": "Adam J. Connolly"
+			},
+			{
+				"name": "Caroline Mendonça Costa"
+			},
+			{
+				"name": "Fernando  Otaviano Campos"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "J Whitaker"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			},
+			{
+				"name": "Martin J. Bishop"
+			}
+		],
+		"position": 5,
+		"year": 2022,
+		"date": "2022-05-18",
+		"venue": "EP Europace",
+		"doi": "10.1093/europace/euac053.402",
+		"url": "https://doi.org/10.1093/europace/euac053.402",
+		"category": "abstract",
+		"openAccess": true,
+		"license": null
+	},
+	{
+		"title": "An automated algorithm to enhance anti-tachycardia pacing efficacy by attenuating re-initiation of ventricular tachycardia",
+		"authors": [
+			{
+				"name": "Shuang Qian"
+			},
+			{
+				"name": "Adam J. Connolly"
+			},
+			{
+				"name": "Caroline Mendonça Costa"
+			},
+			{
+				"name": "Fernando  Otaviano Campos"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "John Whitaker"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			},
+			{
+				"name": "Martin J. Bishop"
+			}
+		],
+		"position": 5,
+		"year": 2022,
+		"date": "2022-04-28",
+		"venue": "Heart Rhythm",
+		"doi": "10.1016/j.hrthm.2022.03.813",
+		"url": "https://doi.org/10.1016/j.hrthm.2022.03.813",
+		"category": "abstract",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "Global Sensitivity Analysis of Four Chamber Heart Hemodynamics Using Surrogate Models",
+		"authors": [
+			{
+				"name": "Elias Karabelas"
+			},
+			{
+				"name": "Stefano Longobardi"
+			},
+			{
+				"name": "Jana Fuchsberger"
+			},
+			{
+				"name": "Orod Razeghi"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Ronak Rajani"
+			},
+			{
+				"name": "Gundolf Haase"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 5,
+		"year": 2022,
+		"date": "2022-03-30",
+		"venue": "IEEE Transactions on Biomedical Engineering",
+		"doi": "10.1109/tbme.2022.3163428",
+		"url": "https://doi.org/10.1109/tbme.2022.3163428",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Cardiac Simulations: Computer Games to Mend Broken Hearts",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2022,
+		"date": "2022-03-25",
+		"venue": "Frontiers for Young Minds",
+		"doi": "10.3389/frym.2022.685000",
+		"url": "https://doi.org/10.3389/frym.2022.685000",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Modelling and simulation of cardiac shape and function in healthy humans and their industrial, clinical and computational applications",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			}
+		],
+		"position": 1,
+		"year": 2022,
+		"date": "2022-01-01",
+		"venue": "Research Portal (King's College London)",
+		"doi": null,
+		"url": "https://kclpure.kcl.ac.uk/portal/en/studentTheses/3a40a274-9c41-4604-896c-ab5ece97ba30",
+		"category": "thesis",
+		"openAccess": false,
+		"license": null
+	},
+	{
+		"title": "Impact of anatomical reverse remodelling in the design of optimal quadripolar pacing leads: A computational study",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Angela Lee"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2021,
+		"date": "2021-11-25",
+		"venue": "Computers in Biology and Medicine",
+		"doi": "10.1016/j.compbiomed.2021.105073",
+		"url": "https://doi.org/10.1016/j.compbiomed.2021.105073",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Linking statistical shape models and simulated function in the healthy adult human heart",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "M Marciniak"
+			},
+			{
+				"name": "Stefano Longobardi"
+			},
+			{
+				"name": "John Whitaker"
+			},
+			{
+				"name": "Mark D O'Neill"
+			},
+			{
+				"name": "Karli K. Gillette"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2021,
+		"date": "2021-04-15",
+		"venue": "PLoS Computational Biology",
+		"doi": "10.1371/journal.pcbi.1008851",
+		"url": "https://doi.org/10.1371/journal.pcbi.1008851",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "Virtual cohort of 1000 synthetic heart meshes from adult human healthy population",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "M Marciniak"
+			},
+			{
+				"name": "Stefano Longobardi"
+			},
+			{
+				"name": "Whitaker, John"
+			},
+			{
+				"name": "Mark D O'Neill"
+			},
+			{
+				"name": "Karli K. Gillette"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2021,
+		"date": "2021-03-15",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.4506929",
+		"url": "https://doi.org/10.5281/zenodo.4506929",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "other-oa",
+		"altDois": [
+			"10.5281/zenodo.4506930",
+			"10.5281/zenodo.4506929"
+		]
+	},
+	{
+		"title": "Virtual cohort of adult healthy four-chamber heart meshes from CT images",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "M Marciniak"
+			},
+			{
+				"name": "Stefano Longobardi"
+			},
+			{
+				"name": "Whitaker, John"
+			},
+			{
+				"name": "Mark D O'Neill"
+			},
+			{
+				"name": "Karli K. Gillette"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2021,
+		"date": "2021-03-15",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.4590293",
+		"url": "https://doi.org/10.5281/zenodo.4590293",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "other-oa",
+		"altDois": [
+			"10.5281/zenodo.4590294",
+			"10.5281/zenodo.4590293"
+		]
+	},
+	{
+		"title": "Virtual cohort of extreme and average four-chamber heart meshes from statistical shape model",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "M Marciniak"
+			},
+			{
+				"name": "Stefano Longobardi"
+			},
+			{
+				"name": "John Whitaker"
+			},
+			{
+				"name": "Mark D O'Neill"
+			},
+			{
+				"name": "Karli K. Gillette"
+			},
+			{
+				"name": "Christoph M. Augustin"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Steven Niederer"
+			}
+		],
+		"position": 1,
+		"year": 2021,
+		"date": "2021-03-15",
+		"venue": "Zenodo",
+		"doi": "10.5281/zenodo.4593738",
+		"url": "https://doi.org/10.5281/zenodo.4593738",
+		"category": "dataset",
+		"openAccess": true,
+		"license": "other-oa",
+		"altDois": [
+			"10.5281/zenodo.4593739",
+			"10.5281/zenodo.4593738"
+		]
+	},
+	{
+		"title": "Generating Synthetic Labeled Data From Existing Anatomical Models: An Example With Echocardiography Segmentation",
+		"authors": [
+			{
+				"name": "Andrew Gilbert"
+			},
+			{
+				"name": "M Marciniak"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Pablo Lamata"
+			},
+			{
+				"name": "Eigil Samset"
+			},
+			{
+				"name": "Kristin McLeod"
+			}
+		],
+		"position": 3,
+		"year": 2021,
+		"date": "2021-01-14",
+		"venue": "IEEE Transactions on Medical Imaging",
+		"doi": "10.1109/tmi.2021.3051806",
+		"url": "https://doi.org/10.1109/tmi.2021.3051806",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "In-silico pace-mapping using a detailed whole torso model and implanted electronic device electrograms for more efficient ablation planning",
+		"authors": [
+			{
+				"name": "Sofia Monaci"
+			},
+			{
+				"name": "Marina Strocchi"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Karli K. Gillette"
+			},
+			{
+				"name": "John Whitaker"
+			},
+			{
+				"name": "Ronak Rajani"
+			},
+			{
+				"name": "Christopher A. Rinaldi"
+			},
+			{
+				"name": "Mark D O'Neill"
+			},
+			{
+				"name": "Gernot Plank"
+			},
+			{
+				"name": "Andrew Peter King"
+			},
+			{
+				"name": "Martin J. Bishop"
+			}
+		],
+		"position": 3,
+		"year": 2020,
+		"date": "2020-09-17",
+		"venue": "Computers in Biology and Medicine",
+		"doi": "10.1016/j.compbiomed.2020.104005",
+		"url": "https://doi.org/10.1016/j.compbiomed.2020.104005",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by"
+	},
+	{
+		"title": "The ‘Digital Twin’ to enable the vision of precision cardiology",
+		"authors": [
+			{
+				"name": "Jorge Corral Acero"
+			},
+			{
+				"name": "Francesca Margara"
+			},
+			{
+				"name": "M Marciniak"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Filip Lončarić"
+			},
+			{
+				"name": "Yingjing Feng"
+			},
+			{
+				"name": "Andrew Gilbert"
+			},
+			{
+				"name": "João Filipe Fernandes"
+			},
+			{
+				"name": "Syed Hassaan Ahmed Bukhari"
+			},
+			{
+				"name": "Ali Wajdan"
+			},
+			{
+				"name": "Manuel Villegas Martinez"
+			},
+			{
+				"name": "Mariana Sousa Santos"
+			},
+			{
+				"name": "Mehrdad Shamohammdi"
+			},
+			{
+				"name": "Hongxing Luo"
+			},
+			{
+				"name": "Philip Westphal"
+			},
+			{
+				"name": "Paul Leeson"
+			},
+			{
+				"name": "Paolo DiAchille"
+			},
+			{
+				"name": "Viatcheslav Gurev"
+			},
+			{
+				"name": "Manuel Mayr"
+			},
+			{
+				"name": "Liesbet Geris"
+			},
+			{
+				"name": "Pras Pathmanathan"
+			},
+			{
+				"name": "Tina M. Morrison"
+			},
+			{
+				"name": "Richard N. Cornelussen"
+			},
+			{
+				"name": "Frits W. Prinzen"
+			},
+			{
+				"name": "Tammo Delhaas"
+			},
+			{
+				"name": "Adelina Doltra"
+			},
+			{
+				"name": "Marta Sitges"
+			},
+			{
+				"name": "Edward J. Vigmond"
+			},
+			{
+				"name": "Ernesto Zacur"
+			},
+			{
+				"name": "Vicente Grau"
+			},
+			{
+				"name": "Blanca Rodriguez"
+			},
+			{
+				"name": "Espen Wattenberg Remme"
+			},
+			{
+				"name": "Steven Niederer"
+			},
+			{
+				"name": "Peter Mortier"
+			},
+			{
+				"name": "Kristin McLeod"
+			},
+			{
+				"name": "Mark Potse"
+			},
+			{
+				"name": "Esther Pueyo"
+			},
+			{
+				"name": "Alfonso Bueno‐Orovio"
+			},
+			{
+				"name": "Pablo Lamata"
+			}
+		],
+		"position": 4,
+		"year": 2020,
+		"date": "2020-02-24",
+		"venue": "European Heart Journal",
+		"doi": "10.1093/eurheartj/ehaa159",
+		"url": "https://doi.org/10.1093/eurheartj/ehaa159",
+		"category": "article",
+		"openAccess": true,
+		"license": "other-oa"
+	},
+	{
+		"title": "Visibility graphs of fractional Wu–Baleanu time series",
+		"authors": [
+			{
+				"name": "J. Alberto Conejero"
+			},
+			{
+				"name": "Carlos Lizama"
+			},
+			{
+				"name": "Ainara Mira‐Iglesias"
+			},
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			}
+		],
+		"position": 4,
+		"year": 2019,
+		"date": "2019-05-29",
+		"venue": "The Journal of Difference Equations and Applications",
+		"doi": "10.1080/10236198.2019.1619714",
+		"url": "https://doi.org/10.1080/10236198.2019.1619714",
+		"category": "article",
+		"openAccess": true,
+		"license": "cc-by-nc-nd"
+	},
+	{
+		"title": "Shock wave formation in compliant arteries",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "J. Alberto Conejero"
+			},
+			{
+				"name": "Ignacio García‐Fernández"
+			}
+		],
+		"position": 1,
+		"year": 2019,
+		"date": "2019-01-01",
+		"venue": "Evolution equations and control theory",
+		"doi": "10.3934/eect.2019012",
+		"url": "https://doi.org/10.3934/eect.2019012",
+		"category": "article",
+		"openAccess": true,
+		"license": null
+	},
+	{
+		"title": "Characterisation of Position Based Dynamics for Elastic Materials",
+		"authors": [
+			{
+				"name": "Cristobal Rodero",
+				"me": true
+			},
+			{
+				"name": "Real, Pablo"
+			},
+			{
+				"name": "P. Zuñeda"
+			},
+			{
+				"name": "Carlos Couceiro Monteagudo"
+			},
+			{
+				"name": "Miguel Lozano"
+			},
+			{
+				"name": "Ignacio García‐Fernández"
+			}
+		],
+		"position": 1,
+		"year": 2016,
+		"date": "2016-01-01",
+		"venue": "Eurographics",
+		"doi": "10.2312/ceig.20161314",
+		"url": "https://doi.org/10.2312/ceig.20161314",
+		"category": "conference",
+		"openAccess": true,
+		"license": null
+	}
+]

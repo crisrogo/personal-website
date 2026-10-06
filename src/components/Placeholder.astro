@@ -1,0 +1,43 @@
+---
+/*
+ * A gap the site admits to. Every placeholder is listed in OPEN_QUESTIONS.md,
+ * and the dashed frame makes each one impossible to miss when reviewing a
+ * page. None should survive to launch.
+ */
+interface Props {
+	/** What is missing, said plainly. */
+	need: string;
+	inline?: boolean;
+}
+
+const { need, inline = false } = Astro.props;
+const Tag = inline ? 'span' : 'p';
+---
+
+<Tag class:list={['placeholder', inline && 'inline']}>
+	<span class="label">To fill</span>
+	{need}
+</Tag>
+
+<style>
+	.placeholder {
+		display: block;
+		max-width: var(--measure);
+		border: 1px dashed var(--ink-faint);
+		padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+		font-size: var(--fs-small);
+		color: var(--ink-muted);
+		background-color: var(--surface-sunken);
+	}
+
+	.placeholder.inline {
+		display: inline;
+		padding: 0 calc(var(--spacing) * 1.5);
+	}
+
+	.label {
+		font-weight: var(--weight-strong);
+		color: var(--ink);
+		margin-inline-end: 0.5em;
+	}
+</style>
